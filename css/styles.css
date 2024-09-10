@@ -1,0 +1,1058 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.header{
+    font-family:'varela round' , sans-serif;
+    width: 100%;
+    /* margin-left:80px; */
+    /* border-radius: 10px ; */
+    height: 55px;
+    background-color: EBF4F6;
+    background-attachment: fixed;
+    font-size: 17;
+    position: fixed;
+    overflow: auto;
+    top:0;
+    left:0;
+    z-index: 5;
+    /* color: ; */
+    opacity: 0.8 ;
+}
+.header img{
+    width: 150;
+    height: 50;
+    float: left;
+    margin-left: 50;
+    margin-top: 1;
+}
+
+
+
+.header ul{
+    list-style: none;
+    margin-top: px;
+    margin-left:1000;
+}
+.header ul li{
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+}
+
+.header ul li::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 4;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(68,46,133);
+    margin-left: 10;
+   transition: 0.5s; 
+}
+.header ul li:hover::after {
+   width: 80%;
+   
+}
+
+.header ul li .active::after{
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 4;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(68,46,133);
+    margin-left: 10;
+   transition: 0s;   
+}
+
+.header ul a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* ////////////////////////////////////////////////////////////////// */
+
+.I-HOME{
+    color: red;
+    font-size: 40;
+}
+
+
+
+.home{
+    width: 100%;
+    height: 100vh;
+     background-image:url(../images/wallpaperflare.com_wallpaper.jpg);  
+     position: relative;                                                                     
+}
+.homeoverlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0 ,0 , 0.7);
+}
+.container{
+    position: relative;
+}
+
+.homeinfo{
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.homeinfo h1{
+    text-align: center;
+    font-size: 55;
+    margin-bottom: 30;
+    
+}
+.homeinfo p{
+    text-align: center;
+    font-size: 20;
+    line-height: 2;
+}
+.homebtn{
+    border: none;
+    width: 130;
+    height: 45;
+    margin-left:px;
+    background-color: white;
+    text-align: center;
+    padding: 2;
+    border-radius: 15px;
+    font-size: 18;
+    
+}
+.b2{
+        background-color:2CF3B6 ;
+}
+.b2:hover{
+    background-color:  rgb(68,46,133);
+    color: white;
+    /* font-size: x-large; */
+}
+.b1:hover{
+    background-color: red ;
+    color: white;
+    /* font-size: 20; */
+}
+.btns{
+    margin-left: 270 ;
+    margin-top: 20;
+}
+
+/* //////////////////////////////////////////////////////////// */
+.section-2{
+    width: 100%;
+    height: 700;
+    /* background-color: blanchedalmond; */
+    /* background-color: 1B1B1B; */
+    
+}
+.welcome-h1{
+    /* margin-top: 8   0;? */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 40;
+    font-family:'varela round' , sans-serif;
+}
+.welcome-hr{
+    width: 100px;
+    height: 5px;
+    background-color: rgb(68,46,133);
+    margin: auto;
+    margin-top: 10;
+}
+
+.welcome-container{
+    width:80%;
+    margin: auto;
+}
+
+.welcome-parent{
+overflow: auto;
+position: relative;
+}
+
+.welcome-item{
+    text-align: center;
+    padding: 30 0;
+    margin-top: 150;
+    width:30%;
+    background-color: white;  
+    height: 250;
+    float: left;
+    line-height: 2;
+    position: relative;
+    border: 2px solid black;
+
+/* border: 1px solid;
+border: solid rgb(43, 56, 43); */
+}
+.welcome-item-info{
+position: absolute;
+z-index: 3;
+}
+.wel-item-2{
+    margin: 0 5%;
+    margin-top: 150;
+}
+
+.i-wel{
+font-size: 35;
+color:rgb(95, 71, 168);
+margin-bottom: 7;
+}
+.welcome-item-h2{
+    font-family:'varela round' , sans-serif;
+}
+.welcome-item-p{
+    font-size: 17;
+    padding: 3 8;
+    color: gray;
+}
+
+.welcome-item-link{
+    margin-top: 12px;
+    font-size: 27;
+    padding-top: 10;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    color:  rgb(95, 71, 168);   
+}
+
+.wel-after:after
+{
+    position: absolute;
+    content: "";
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.841);
+    opacity: 0;
+}
+
+.wel-after:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: 0.5s;
+}
+.welcome-item:hover .welcome-item-info{
+    color: white;
+    transition: 1s  ;
+}
+.welcome-item:hover .welcome-item-link{
+    color: 2CF3B6 ;
+    transition: 1.25S;
+}
+.welcome-item:hover .i-wel{
+    color:2CF3B6;
+    transition: 1.25S;
+}
+.welcome-item:hover .welcome-item-p{
+    color:758694;
+}
+/*////////////////////////////////////////////////////////// */
+.section3{
+    
+}
+.title-h
+{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 35;
+    padding-top: 70;
+    font-family:'varela round' , sans-serif;
+
+}
+
+.title-hr{
+    width: 80px;   
+    height: 5px;
+    background-color:  rgb(68,46,133);
+    margin: auto;
+    margin-top: 10;
+}
+.section3{
+    background-color: rgb(232,232,232);
+ /* background-color: rgb(231, 228, 228); */
+ /* margin-bottom: 250; */
+ width: 100%;
+ height: 125vh;
+}
+
+.feature-container{
+    width:80%;
+    margin: auto;
+}
+
+.feature-parent{
+    margin-top: 50;
+    /* margin-b: 150; */
+   
+}
+
+.feature-overlay{
+overflow: auto;
+}
+
+.feature-item{
+    width: 30%;
+    height: 380;
+    float: left;
+    text-align: center; 
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 50;
+    margin-top: 50;
+    position: relative;
+    border-radius: 10px;
+}
+
+.f-2{
+    margin: 0  5%;
+    margin-top: 50;
+    /* margin-bottom: 50; */
+    
+}
+.feature-overlay:after{
+    position: absolute;
+    content: "";
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+}
+.feature-overlay:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: 0.60s;
+}
+
+.feature-img{
+ width: 95%;
+ height: 95%;
+ float: left;
+ /* position: relative; */
+ margin: 10 0 0 10;
+}
+
+.feature-item-info{
+    text-align: center;
+    font-size: large;
+    visibility: hidden;
+    position: absolute;
+    padding:50;
+    line-height: 2;
+    margin-top: 30;
+    z-index: 5 ;
+}
+.feature-item:hover .feature-item-info{
+    visibility: visible;
+    color: rgb(255, 255, 255);
+}
+
+.i-feature{
+    font-size: 34;
+    color: red;
+    margin-top: 20;
+    margin-left: 15 ;
+
+}
+
+.i-blue{
+    color:rgb(155, 127, 241) ;
+    
+}
+.feature-item-h{
+    color:2CF3B6 ;
+    font-weight: 1000;
+    font-size:33;
+    margin-bottom: 13;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+}
+/* /////////////////////////////////////////////////////////////////// */
+.title-h{
+    text-transform: capitalize;
+}
+.section4{
+    width: 100%;
+    height: 80vh;
+    margin-top: 20;
+   
+    
+}
+
+.offer-container{
+    width: 80%;
+    margin: auto;
+    
+
+}
+.offer-parent{
+    margin-top: 80;
+    overflow: auto;
+}
+
+.offer-item{
+
+    width:30%;
+    margin: auto;
+    height: 200;
+    float: left;
+    border: 0.5px solid rgba(0, 0, 0, 0.597);
+    margin-top: 30;
+    /* text-align: center; */
+    padding: 20 20 0 20;
+    position: relative;
+    
+}
+.offer2{
+    margin: 0 5%;
+    margin-top: 30;
+}
+
+.offer-tit{
+    display: inline ;
+    font-size: 30;
+    text-transform: capitalize;
+    font-family:'varela round' , sans-serif;
+
+}
+.offer-p{
+    line-height: 2.1;
+    padding: 0 45;
+    color: gray;
+}
+.offer-i{
+   padding-right:2;
+   font-size: 40;
+  color:  rgb(95, 71, 168);
+}
+.offer-after:after{
+    
+    position: absolute;
+    content: "";
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+     background-color: rgba(0, 0, 0,0.841);
+     opacity: 0;
+}
+
+.offer-after:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: 0.5s;
+}
+.offer-info{
+    position: absolute;
+    z-index: 5;
+}
+
+.offer-item:hover .offer-tit{
+    color:white;
+transition: 1S;
+}
+
+.offer-item:hover .offer-i{
+    color: red;
+    /* color: 2CF3B6; */
+    transition: 1.25S;  
+}
+.offer-item:hover .offer-p{
+    color:758694;
+    transition: 1S;
+}
+/* ///////////////////////////////////////////// */
+.section5{
+    margin-top: 50;
+    height: 80vh;
+    overflow: auto;
+    background-color:rgb(232,232,232) ;
+}
+.choose-hr{
+    width: 80px;   
+    height: 4px;
+    background-color:  rgb(68,46,133);
+    /* margi; */
+    margin-left: 8;
+    margin-top: -5;
+    
+}
+.choose-tit{
+    margin-top: 150;
+    font-size: 35;
+    font-family:'varela round' , sans-serif;
+
+}
+.choose-p{
+    font-size: 22   ;
+
+    margin-top: 30;
+    line-height: 1.2;
+    padding-bottom: 20  ;
+    margin-left: 10;
+}
+.choose-left{
+    margin-top: 250;
+width: 50%;
+float: left;
+ line-height:2px;
+ 
+}
+.choose-right{
+    width: 50%;
+    float: left;
+    line-height: 2;
+    padding-left: 250;
+}
+.imgg{
+    width: 100%;
+}
+
+.choose-left img{
+    margin-left: 250;
+    height: 400;
+    width: 400;
+    position: relative;
+
+}
+.choose-right ul li{
+    line-height: 1.2;
+    list-style: none;
+}
+li{
+    padding: 12;
+    font-size: larger;
+}
+
+
+.under-img{
+  float:left;
+  font-size: 35;
+  line-height: 0.75;
+  display: inline-flex ;
+  opacity: 0.5  ;
+   margin-left: 540;
+   position: absolute;
+
+}
+
+.i-chos{
+    color: rgb(95, 71, 168);
+}
+ .active{
+    color: blue;
+}
+.ball:hover{
+    color: blue;
+}
+/* ///////////////////////////////////////////////////// */
+
+.sec-6{
+    width: 100%;
+    height: 40vh;
+    background-image: url(../images/bbbb.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+
+.step-overlay{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0 ,0 , 0.4);
+
+}
+.step-container{
+    width: 80%;
+    margin: auto;
+}
+
+.steps-parent{
+overflow: auto;
+}
+.steps-item{
+    width: 20%;
+    float: left;
+    margin-top: 130;
+    font-size: larger;
+    text-align: center;
+    margin-left: 60;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+
+}
+
+
+.step-i{
+    font-size: 55;
+    margin-bottom: 20;
+    color:2CF3B6 ;
+}
+.step-p{
+    font-size: larger;
+    margin-bottom: 20;
+    color: red;
+    padding-left: 3;
+}
+.step-h{
+    padding-left: 20;
+    font-size: 35;
+}
+.s3{
+    font-size: 60;
+
+}
+
+/* //////////////////////////// */
+.price-h{
+    text-align: center;
+    font-size: 40;
+    margin-top: 100;
+    font-family:'varela round' , sans-serif;
+    
+}
+.price-hr{
+    width: 60;
+    height: 4;
+    background-color:  rgb(95, 71, 168);
+    margin: auto;
+    margin-top: 10;
+}
+
+.price-container{
+    width: 80%;
+    margin: auto;
+}
+.price-parent{
+overflow: auto;
+margin-top: 100;
+}
+.price-item{
+    width: 30%;
+    float: left;
+    text-align: center;
+    list-style: none;
+    border: 0.25px solid gray;
+    padding: 20;
+    position: relative;
+}
+.p2{
+margin: 0 5%;
+}
+.price-list{
+    list-style: none
+}
+.price-month{
+    margin: auto;
+    margin-top: 20;
+    padding-top:8;
+    font-size: x-large;
+    width: 100;
+    height: 100;
+    border: 2px solid rgb(95, 71, 168);
+    border-radius: 50%;
+    /* background-color: aqua; */    font-family:'varela round' , sans-serif;
+    margin-bottom: 8;
+}
+.dollar{
+    font-size: 40;
+}
+.price-list{
+    /* font-size: large; */
+    color: gray;
+    line-height: 0.5;
+}
+.price-tit{
+    font-size: 20;
+    font-family:'varela round' , sans-serif;
+    color: gray;
+    text-transform: uppercase;
+}
+.btn-price{
+font-size: large;
+width: 110;
+height: 35  ;
+border: 2px solid rgb(95, 71, 168);
+background-color: white;
+margin-top: 15;
+font-family: "Edu VIC WA NT Beginner", cursive;
+font-size: 25;
+}
+.price-after:after{
+    
+    position: absolute;
+    content: "";
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+  transition: 0.50s;
+     background-color: rgba(0, 0, 0, 0.44);
+}
+.price-after:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  
+}
+
+.price-after:hover .price-month{
+color: red;
+/* transition-delay: 0.15; */
+transition:0.75s;
+}
+.price-after:hover .price-tit{
+    color: rgb(255, 0, 0);
+}
+/* ///////////////////////////////////////////// */
+.sec-8{
+    height: 40vh;
+    background-image: url(../images/bbbb.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    margin-top: 150;
+    position: relative;
+    
+}
+.des-overlay{
+    top: 0;
+    left: 0;
+    position: absolute;
+
+    background-color: rgba(0, 0 ,0 , 0.6);
+    width: 100%;
+    height: 100%;
+}
+
+.des-container{
+    width: 70%;
+    margin: auto;
+}
+.des-parent{
+    padding-top: 120;
+overflow: auto;
+}
+.des-items{
+    padding-left: 5%;
+    width: 50%;
+    float: left;
+    font-size: larger;
+}
+.des-top{
+    overflow: auto;
+    margin-bottom: 25;
+}
+.img-des{
+    border-radius: 50%; 
+    float:left;
+    margin-right: 15;
+}
+.des-tit{
+  margin-top: 5;
+  font-size: 35;
+  font-family:'varela round' , sans-serif;
+}
+.des-job{
+color: red;
+/* font-family: "Edu VIC WA NT Beginner", cursive; */
+font-size: 20;
+}
+.des-caption{
+    
+        font-size: 26   ;
+        font-family: "Edu VIC WA NT Beginner", cursive;
+}
+/* /////////////////////////////////////////////////////////////////////////////// */
+.team-tit{
+    text-align: center;
+   padding-top: 150;
+    font-size: 45;
+    font-family:'varela round' , sans-serif;
+}
+.team-hr{
+    width: 60;
+    height: 4;
+    background-color:  rgb(83, 60, 155);
+    margin: auto;
+    margin-top: 10;
+}
+.sec-9{
+    height: 900;
+    background-color:rgb(232,232,232);
+}
+
+.team-container{
+    width: 80%;
+    margin: auto;
+}
+.team-parent{
+    margin-top: 150;
+overflow: auto;
+margin-bottom: 50;
+
+}
+.team-items{
+width: 30%;
+float: left;
+background-color:686D76;
+color: white; 
+/* background-color: 758694; */
+text-align: center;
+position: relative;
+padding-top: 20;
+padding-bottom: 15  ;
+/* border-radius: 10px;  */
+}
+.team-2{
+    margin: 0 5%;
+}
+
+.team-img img{
+    height: 300;
+    width: 220;
+    width:100%;
+
+  
+ 
+
+}
+.team-img{
+width: 85%;
+position: relative; 
+  margin: auto;
+}
+.team-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0 ,0 , 0.555);
+    visibility: hidden;
+}
+.team-overlay a{
+    display: block;
+    height: 50;
+    width:50 ;
+    background-color:   3C3D37;
+    color: 2CF3B6;
+    margin-left: auto   ;
+    font-size: larger;
+}
+.team-overlay a i{
+    line-height: 3;
+}
+.team-info{
+    font-size: larger;
+}
+.team-member{
+    color:black;
+    padding-top: 5;
+    font-size: 35;
+    /* font-family: "Edu VIC WA NT Beginner", cursive; */
+}
+.team-p{
+    color: rgba(245, 245, 245, 0.535);
+    font-size: large;
+    font-weight: 400;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+}
+.team-after::after{
+    position: absolute;
+    content: "";
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.704);
+    opacity: 0;
+}
+.team-after:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    transition: 1s;
+                                           
+}
+
+.team-after:hover .team-overlay{
+    visibility: visible;
+}
+.team-after:hover .team-member{
+    color:white;
+    transition: 0.75s;
+}
+.team-after:hover .team-p{
+    color: 2CF3B6;
+    transition:0.75s ;
+}
+/* ////////////////////////////////////////////// */
+.new-title{
+    margin-top: 100;
+   text-align: center;
+   font-size: x-large;
+   font-size: 45;
+}
+.new-hr{
+    width: 60;
+    height: 4;
+    background-color:  rgb(95, 71, 168);
+    margin: auto;
+    margin-top: 10; 
+}
+.sec-10{
+
+    height: 660px;;
+}
+.new-container{
+    width: 80%;
+    margin: auto;
+}
+.new-parent{
+    overflow: auto;
+    margin-top: 100;
+    background-color: rgba(245, 245, 245, 0.718);
+
+}
+.new-item{
+    float: left;
+    width: 30%;
+    background-color: white;
+    position: relative;
+    padding-left: 20;
+    padding-right:10;
+    height: 490;
+}
+.new-info{
+ 
+}
+.new-img img{
+    height: 250;
+    width: 220;
+}
+.new-2{
+    margin: 0 5%;
+}
+.new-list{
+    margin-top: 10;
+    list-style: none;
+    display: inline-flex;
+    font-size:12;
+    margin-bottom: 5;
+    
+}
+
+
+.new-link{
+    color:rgb(97,149,255);
+    font-size: larger;
+}
+.new-list li i{
+    color:rgb(97,149,255);
+}
+.new-after::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(67, 131, 191, 0.6);
+    transition: 1s;
+    opacity: 0;
+}
+.new-after:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+   
+}
+.new-p{
+    color: gray;
+    line-height: 1.8;
+    margin-top: 15;
+    margin-bottom: 18;
+    padding-left: 8;
+}
+.new-tit{
+    font-size: 24;
+
+}
+/* ///////////////////////////////// */
+.sec-11{
+    height: 40vh;
+    background-color: rgba(0, 0, 0, 0.742);
+}
+.footer{
+    text-align: center;
+}
+.footer img{
+    margin-top: 50;
+}
+.footer ul {
+    margin-top: 30;
+    /* display: inline-flex; */
+    list-style: none; 
+}
+.footer ul li{
+    display: inline;
+    padding: 1 ;
+}
+
+.i1{
+   color:white  ; 
+   width: 50;
+   height: 50;
+   border-radius: 50%;
+   background-color:rgb(97,149,255);
+   text-align: center;
+   padding-top: 13;
+   padding-left: 2;
+   font-size: 23;
+}
+.i1:hover{
+    background-color: rgba(54, 54, 168, 0.62)  ;
+}
+.footer-link{
+    margin-bottom: 30;
+}
+.footer p{
+    color: gray;
+}
